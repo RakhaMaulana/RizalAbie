@@ -10,13 +10,13 @@ st.set_page_config(
 st.title("Analysis of Dataset")
 # Define the train_classes dictionary
 train_classes = {
-    'Uninfected': len(os.listdir('/workspaces/RizalAbie/train/Uninfected')),
-    'Parasitized': len(os.listdir('/workspaces/RizalAbie/train/Parasitized'))
+    'Uninfected': len(os.listdir('train/Uninfected')),
+    'Parasitized': len(os.listdir('train/Parasitized'))
 }
 
 test_classes = {
-    'Uninfected': len(os.listdir('/workspaces/RizalAbie/test/Uninfected')),
-    'Parasitized': len(os.listdir('/workspaces/RizalAbie/test/Parasitized'))
+    'Uninfected': len(os.listdir('test/Uninfected')),
+    'Parasitized': len(os.listdir('test/Parasitized'))
 }
 
 # Create the bar chart
